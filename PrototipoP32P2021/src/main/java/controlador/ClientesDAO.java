@@ -23,11 +23,11 @@ import modelo.Clientes;
  */
 public class ClientesDAO {
     
-     private static final String sql_select = "SELECT Numero_Tarjeta, Nombre_Cliente, Dpi_Cliente,Dirreccion_Cliente,Correo_Cliente FROM Clientes";
+     private static final String sql_select = "SELECT Numero_Tarjeta, Nombre_Cliente, Dpi_Cliente,Telefono_Cliente,Dirreccion_Cliente,Correo_Cliente FROM Clientes";
     private static final String sql_insert = "INSERT INTO Clientes VALUES(?,?,?,?,?,?)";
-    private static final String sql_update = "UPDATE Clientes SET Numero_Tarjeta=?, Nombre_Cliente=?, Dpi_Cliente=?, Dirreccion_Cliente=?, Correo_Cliente=? WHERE Numero_Tarjeta=?";
+    private static final String sql_update = "UPDATE Clientes SET Numero_Tarjeta=?, Nombre_Cliente=?, Dpi_Cliente=?, Telefono_Cliente=?,Dirreccion_Cliente=?, Correo_Cliente=? WHERE Numero_Tarjeta=?";
     private static final String sql_delete = "DELETE FROM Clientes WHERE Numero_Tarjeta=?";
-    private static final String sql_query = "SELECT Numero_Tarjeta, Nombre_Cliente, Dpi_Cliente,Dirreccion_Cliente,Correo_Cliente FROM Clientes WHERE Numero_Tarjeta=?";
+    private static final String sql_query = "SELECT Numero_Tarjeta, Nombre_Cliente, Dpi_Cliente,Telefono_Cliente,Dirreccion_Cliente,Correo_Cliente FROM Clientes WHERE Numero_Tarjeta=?";
 
     public List<Clientes> select() throws SQLException {
         Connection con = null;
