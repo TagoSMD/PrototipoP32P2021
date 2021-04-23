@@ -23,7 +23,8 @@ import modelo.Clientes;
  */
 public class ClientesDAO {
     
-     private static final String sql_select = "SELECT Numero_Tarjeta, Nombre_Cliente, Dpi_Cliente,Telefono_Cliente,Dirreccion_Cliente,Correo_Cliente FROM Clientes";
+     
+    private static final String sql_select = "SELECT Numero_Tarjeta, Nombre_Cliente, Dpi_Cliente,Telefono_Cliente,Dirreccion_Cliente,Correo_Cliente FROM Clientes";
     private static final String sql_insert = "INSERT INTO Clientes VALUES(?,?,?,?,?,?)";
     private static final String sql_update = "UPDATE Clientes SET Numero_Tarjeta=?, Nombre_Cliente=?, Dpi_Cliente=?, Telefono_Cliente=?,Dirreccion_Cliente=?, Correo_Cliente=? WHERE Numero_Tarjeta=?";
     private static final String sql_delete = "DELETE FROM Clientes WHERE Numero_Tarjeta=?";
@@ -134,7 +135,7 @@ public class ClientesDAO {
             stmt = conn.prepareStatement(sql_delete);
              stmt.setString(1, clientes.getNumero_Tarjeta());
             rows = stmt.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Alumno Eliminado Con Exito");
+            JOptionPane.showMessageDialog(null, " Eliminado Con Exito");
         } catch (SQLException ex) {
             ex.printStackTrace(System.out);
         } finally {

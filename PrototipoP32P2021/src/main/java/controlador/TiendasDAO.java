@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package controlador;
 import modelo.Conexion;
@@ -20,7 +16,7 @@ import modelo.Tiendas;
  */
 public class TiendasDAO {
 
-      private static final String sql_select = "SELECT Codigo_Tienda, Nombre_Tienda, Ubicacion_Tienda,Estado_Tienda FROM Tiendas";
+    private static final String sql_select = "SELECT Codigo_Tienda, Nombre_Tienda, Ubicacion_Tienda,Estado_Tienda FROM Tiendas";
     private static final String sql_insert = "INSERT INTO Tiendas VALUES(?,?,?,?)";
     private static final String SQL_UPDATE = "UPDATE Tiendas SET Codigo_Tienda=?, Nombre_Tienda=?, Ubicacion_Tienda=?,Estado_Tienda=? WHERE Codigo_Tienda = ?";
     private static final String sql_delete = "DELETE FROM Tiendas WHERE Codigo_Tienda=?";

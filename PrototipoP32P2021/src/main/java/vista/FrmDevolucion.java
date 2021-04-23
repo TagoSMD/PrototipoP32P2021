@@ -92,7 +92,7 @@ public class FrmDevolucion extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
-        setTitle("Devolucion");
+        setTitle("Asignacion a Devolucion");
         setVisible(true);
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Detalles"));

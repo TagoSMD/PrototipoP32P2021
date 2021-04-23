@@ -91,7 +91,7 @@ public class EmpleadosDAO {
         
         try {
             conn = Conexion.getConnection();
-            //System.out.println("ejecutando query: " + SQL_UPDATE);
+            
             stmt = conn.prepareStatement(SQL_UPDATE);
           stmt.setString(1, cuenta.getCodigo_Empleado());
           stmt.setString(2, cuenta.getCodigo_Tienda());
@@ -100,7 +100,7 @@ public class EmpleadosDAO {
           stmt.setString(5, cuenta.getCodigo_Empleado());
  
             rows = stmt.executeUpdate();
-            //System.out.println("Registros actualizado:" + rows);
+      
             
         } catch (SQLException ex) {
             ex.printStackTrace(System.out);

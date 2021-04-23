@@ -130,7 +130,7 @@ public class MdiGeneral extends javax.swing.JFrame {
         jMenu4.setText("Procesos");
         jMenu4.setFont(new java.awt.Font("Dialog", 2, 12)); // NOI18N
 
-        jMenuItem6.setText("Devoluciones");
+        jMenuItem6.setText("Asignacion a Devoluciones");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem6ActionPerformed(evt);

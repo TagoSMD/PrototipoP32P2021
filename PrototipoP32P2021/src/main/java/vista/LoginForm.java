@@ -13,7 +13,7 @@ import modelo.Usuario;
 
 /**
  *
- * @author TagoKG
+ * @author Santiago Martinez Diaz
  */
 public class LoginForm extends javax.swing.JFrame {
 
