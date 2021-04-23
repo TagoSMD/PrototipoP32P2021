@@ -12,9 +12,9 @@
             <version>8.0.23</version>
         </dependency>
         <dependency>
-            <groupId>com.formdev</groupId>
-            <artifactId>flatlaf</artifactId>
-            <version>0.46</version>
+            <groupId>com.jtattoo</groupId>
+            <artifactId>JTattoo</artifactId>
+            <version>1.6.8</version>
         </dependency>
     </dependencies>
     <properties>

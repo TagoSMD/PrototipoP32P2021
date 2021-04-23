@@ -401,10 +401,10 @@ public void buscarperfil(){
     private void BtnAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAyudaActionPerformed
 
         try {
-            if ((new File("src\\main\\java\\Finanzas\\ayudas\\MantenimientoTransaccion.chm")).exists()) {
+            if ((new File("src\\main\\java\\ayudas\\AyudaMantenimientoTienda.chm")).exists()) {
                 Process p = Runtime
                 .getRuntime()
-                .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\Finanzas\\ayudas\\MantenimientoTransaccion.chm");
+                .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\ayudas\\AyudaMantenimientoTienda.chm");
                 p.waitFor();
             } else {
                 JOptionPane.showMessageDialog(null, "La ayuda no Fue encontrada");
