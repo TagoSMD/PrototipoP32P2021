@@ -14,7 +14,7 @@ import java.sql.*;
  */
 public class Conexion {
     
-    private static final String JDBC_URL = "jdbc:mysql://localhost/LabFM?useSSL=false&serverTimezone=UTC";
+    private static final String JDBC_URL = "jdbc:mysql://localhost/LabFM2?useSSL=false&serverTimezone=UTC";
     private static final String JDBC_USER = "root";
     private static final String JDBC_PASS = "1234";
     

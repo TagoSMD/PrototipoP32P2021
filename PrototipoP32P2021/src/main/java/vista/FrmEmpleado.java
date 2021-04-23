@@ -22,7 +22,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Sammy Guergachi <sguergachi at gmail.com>
+ * @author Santiago Martinez Diaz
  */
 public class FrmEmpleado extends javax.swing.JInternalFrame {
 //Metodo Llenado de Combos consulta los dominios y datos TipoPersonaDAO y TipoPersona para obetner el codigo en el combobox
