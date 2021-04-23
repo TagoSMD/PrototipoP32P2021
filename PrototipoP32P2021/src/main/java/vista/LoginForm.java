@@ -160,8 +160,8 @@ public class LoginForm extends javax.swing.JFrame {
                 if (txtContraseña.getText().equals(usuarioAConsultar.getPassword()) && txtUsuario.getText().equals(usuarioAConsultar.getUsername())) {
                     JOptionPane.showMessageDialog(null, "Bienvenido\n", "Mensaje de bienvenida", JOptionPane.INFORMATION_MESSAGE);
 
-                //    MdiGeneral menuGeneral = new MdiGeneral();
-                  //  menuGeneral.setVisible(true);
+                  MdiGeneral menuGeneral = new MdiGeneral();
+                   menuGeneral.setVisible(true);
                     this.dispose();
 
                 } else {
@@ -179,9 +179,9 @@ public class LoginForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-     // Registro11 ventana = new Registro11();
-      //  jPanel1.add(ventana); 
+       // TODO add your handling code here:
+     Registro11 ventana = new Registro11();
+       jPanel1.add(ventana); 
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -194,7 +194,7 @@ public class LoginForm extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-     UIManager.setLookAndFeel("com.jtattoo.plaf.noire.NoireLookAndFeel");
+    UIManager.setLookAndFeel("com.jtattoo.plaf.noire.NoireLookAndFeel");
           } catch (ClassNotFoundException ex) {
               java.util.logging.Logger.getLogger(LoginForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
           } catch (InstantiationException ex) {
