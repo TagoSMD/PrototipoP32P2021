@@ -42,6 +42,7 @@ public class MdiGeneral extends javax.swing.JFrame {
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
+        jMenuItem6 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
         jMenu8 = new javax.swing.JMenu();
@@ -56,11 +57,11 @@ public class MdiGeneral extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1185, Short.MAX_VALUE)
+            .addGap(0, 1342, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 640, Short.MAX_VALUE)
+            .addGap(0, 791, Short.MAX_VALUE)
         );
 
         jMenu1.setText("Inicio");
@@ -114,6 +115,15 @@ public class MdiGeneral extends javax.swing.JFrame {
 
         jMenu4.setText("Procesos");
         jMenu4.setFont(new java.awt.Font("Dialog", 2, 12)); // NOI18N
+
+        jMenuItem6.setText("Devoluciones");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem6);
+
         jMenuBar1.add(jMenu4);
 
         jMenu5.setText("Informes");
@@ -193,6 +203,17 @@ public class MdiGeneral extends javax.swing.JFrame {
         jPanel1.add(ventana); 
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        // TODO add your handling code here:
+                  FrmDevolucion ventana = null;
+        try {
+            ventana = new FrmDevolucion();
+        } catch (SQLException ex) {
+            Logger.getLogger(MdiGeneral.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        jPanel1.add(ventana); 
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -242,6 +263,7 @@ public class MdiGeneral extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
